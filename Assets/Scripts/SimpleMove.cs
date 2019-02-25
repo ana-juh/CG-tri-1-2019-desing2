@@ -15,9 +15,11 @@ public class SimpleMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float So = transform.position.x;
-        float newX = So + horizontalInput * SpeedFactor * Time.deltaTime;
-       transform.position = new Vector3(newX, transform.position.y, transform.position.z);
+       float horizontalInput = Input.GetAxisRaw("Horizontal");
+       float verticalInput = Input.GetAxisRaw("Vertical");
+
+       Vector3 velocity = new Vector3 (horizontalInput, verticalInput, 0f) * SpeedFactor;
+
+       transform.position = transform.position + velocity * Time.deltaTime;
     }
 }
