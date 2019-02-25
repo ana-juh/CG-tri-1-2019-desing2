@@ -6,7 +6,14 @@ public class SimpleMove : MonoBehaviour
 {
     [SerializeField]
     private float SpeedFactor = 1f;
-    
+       [SerializeField]
+     private float LimitTop = 4f;
+        [SerializeField]
+    private float LimitBottom = -4f;
+        [SerializeField]
+    private float LimitLeft = -8f;
+       [SerializeField]
+     private float limitRight = 8f;
     void Start()
     {
     
@@ -21,5 +28,9 @@ public class SimpleMove : MonoBehaviour
        Vector3 velocity = new Vector3 (horizontalInput, verticalInput, 0f) * SpeedFactor;
 
        transform.position = transform.position + velocity * Time.deltaTime;
+
+       if (transform.position.y < LimitBottom){
+           transform.position = new Vector3 (transform.position.x, LimitBottom, transform.position.z);
+       }
     }
 }
