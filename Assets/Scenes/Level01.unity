@@ -277,9 +277,9 @@ GameObject:
   m_Component:
   - component: {fileID: 269030394}
   - component: {fileID: 269030393}
-  - component: {fileID: 269030395}
   - component: {fileID: 269030397}
   - component: {fileID: 269030396}
+  - component: {fileID: 269030395}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -358,14 +358,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 269030392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9347d9f7c9880434c9a163689e346eb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 372a608fcd075ae4f8caa4316871e945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedFactor: 10
-  LimitTop: 4
-  LimitBottom: -4
-  LimitLeft: -8
-  limitRight: 8
+  SpeedFector: 10
 --- !u!50 &269030396
 Rigidbody2D:
   serializedVersion: 4
