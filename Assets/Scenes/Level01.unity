@@ -3819,6 +3819,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1416056902}
   - component: {fileID: 1416056901}
+  - component: {fileID: 1416056903}
+  - component: {fileID: 1416056904}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -3856,6 +3858,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1416056903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416056900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d3c50c2d711a845a8ed2c4b7b584e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinParticles: {fileID: 7216872414753096951, guid: 92a770d773476bd40be9696f71a5a89e,
+    type: 3}
+--- !u!114 &1416056904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416056900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31574be771e2e2143b8fe47a525c8f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSFX:
+    coinPickup: {fileID: 8300000, guid: c2e4e4aa0741988468e0ff2da5be35d3, type: 3}
 --- !u!1001 &1444602815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4286,6 +4316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31574be771e2e2143b8fe47a525c8f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSFX:
+    coinPickup: {fileID: 0}
 --- !u!1001 &1648380067
 PrefabInstance:
   m_ObjectHideFlags: 0
