@@ -10,17 +10,11 @@ public class SceneManager : MonoBehaviour
     [SerializeField]
     private Transform Tape = null;
 
+    public UIComponents uiComponents;
+
     void Awake() {
         Assert.IsNotNull(Tape);
-    } 
-
-
-    void Start()
-    {
-        
-    }
-
-    
+    }     
     void Update()
     {
         Tape.position = Tape.position + TapeSpeed * Time.deltaTime;
