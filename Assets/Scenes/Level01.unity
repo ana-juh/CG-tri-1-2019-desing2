@@ -4165,9 +4165,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1416056902}
-  - component: {fileID: 1416056901}
   - component: {fileID: 1416056903}
   - component: {fileID: 1416056904}
+  - component: {fileID: 1416056901}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -4184,10 +4184,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1416056900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532c2af08834d2a42b6303a7b2806b3a, type: 3}
+  m_Script: {fileID: 11500000, guid: ff95e30d686a84b4ea7ed22df505fdc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TapeSpeed: {x: -2, y: 0, z: 0}
+  TapeSpeed: {x: -4, y: 0, z: 0}
   Tape: {fileID: 112701646}
   uiComponents:
     hud:
