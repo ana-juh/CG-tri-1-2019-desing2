@@ -17,14 +17,33 @@ public class UIComponents
       }
 
       public Hud hud;
-[Serializable]
+
+
+
+    [Serializable]
+
       public class LevelCompletePanel   
       {
           [Header("Text")]
           public Text txtScore;
           [Header("Other")]
-          public GameObject LCPanel; 
+          public GameObject panel;
       }
       public LevelCompletePanel LCPanel;
+
+
+
+
+    [Serializable]
+
+      public class GameOverPanel   
+      {
+          [Header("Text")]
+          public Text txtScore;
+          [Header("Other")]
+          public GameObject panel; 
+      }
+
+    public GameOverPanel gameOverPanel;
 
 }
