@@ -20,7 +20,9 @@ public class MoveByRigidBody : MonoBehaviour
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
-        Rb.velocity = new Vector3(horizontalInput, verticalInput, 0f) * SpeedFector;
+        Vector3 vet = new Vector3(horizontalInput, verticalInput, 0f);
+
+        Rb.velocity = vet * SpeedFector;
 
     }
 }
