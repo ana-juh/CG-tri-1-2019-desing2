@@ -18,8 +18,7 @@ public class PlayerControl : MonoBehaviour
             StopMusicAndTape();
             AudioManager.instance.PlaySoundLevelComplete(gameObject);
             Destroy(gameObject);
-            LevelManager.instance.IncrementCoinCount();
-           
+            LevelManager.instance.ShowLevelCompletePanel();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Enimies")) 
         {
