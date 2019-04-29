@@ -447,7 +447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &322318017
 Transform:
   m_ObjectHideFlags: 0
@@ -983,7 +983,6 @@ GameObject:
   - component: {fileID: 924570407}
   - component: {fileID: 924570406}
   - component: {fileID: 924570409}
-  - component: {fileID: 924570410}
   - component: {fileID: 924570412}
   - component: {fileID: 924570411}
   - component: {fileID: 924570413}
@@ -1096,19 +1095,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &924570410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924570405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 372a608fcd075ae4f8caa4316871e945, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpeedFector: 10
 --- !u!70 &924570411
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1149,8 +1135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a244b512c182e4fae7906eab28bb5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 7216872414753096951, guid: 92a770d773476bd40be9696f71a5a89e,
-    type: 3}
+  lerpRate: 4
 --- !u!1 &932160462
 GameObject:
   m_ObjectHideFlags: 0
