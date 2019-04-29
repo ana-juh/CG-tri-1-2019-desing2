@@ -25,7 +25,7 @@ public class PlayerControl : MonoBehaviour
         {
             StopMusicAndTape();
             AudioManager.instance.PlaySoundLevelComplete(gameObject);
-            Destroy(gameObject);
+            DestroyPlayer();
             LevelManager.instance.ShowLevelCompletePanel();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Enimies")) 
@@ -49,7 +49,7 @@ public class PlayerControl : MonoBehaviour
         StopMusicAndTape();
         AudioManager.instance.PlaySoundFail(gameObject);
         SFXManager.instance.ShowDieParticles(gameObject);
-        Destroy(gameObject);
+        DestroyPlayer();
         LevelManager.instance.ShowGameOverPanel();
     }
 
@@ -57,6 +57,12 @@ public class PlayerControl : MonoBehaviour
     {
         rb.velocity = Vector3.zero;
         rb.AddForce(Vector3.up * force, ForceMode2D.Impulse);
+    }
+
+    void DestroyPlayer()
+    {
+        Camera.main.GetComponent<CameraFollow>().TurnOff();
+        Destroy(gameObject);
     }
 
 }
