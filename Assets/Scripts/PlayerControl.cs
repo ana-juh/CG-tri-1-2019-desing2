@@ -6,11 +6,22 @@ public class PlayerControl : MonoBehaviour
 {
        
         Rigidbody2D rb;
+        Animator anim;
+
+        public float fallLimit= 2f;
+        
         void Start ()
         {
             rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
         }
-       
+       void Update () 
+       {
+           if  (rb.velocity.y < fallLimit)
+           {
+               anim.SetInteger("state", 0);
+           }
+       }
         void OnTriggerEnter2D(Collider2D other)
         {
         if (other.gameObject.CompareTag("Coin"))
@@ -57,6 +68,7 @@ public class PlayerControl : MonoBehaviour
     {
         rb.velocity = Vector3.zero;
         rb.AddForce(Vector3.up * force, ForceMode2D.Impulse);
+        anim.SetInteger("state",1);
     }
 
     void DestroyPlayer()
